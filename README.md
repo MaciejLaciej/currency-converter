@@ -1,4 +1,7 @@
 # currency-converter
+
+[CONVERTER](https://maciejlaciej.github.io/currency-converter/)
+
 ## Description
 This is first version of currency converter done by the author during front-end course. The operation of this page is base on **three currencies**, that can be set freely, accrodingly to the customer needs.
 ### Currencies
