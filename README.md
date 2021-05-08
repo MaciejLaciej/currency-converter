@@ -1,6 +1,6 @@
 # currency-converter
 
-
+![currency](https://github.com/MaciejLaciej/currency-converter/blob/main/images/currency-img.jpg?raw=true)
 
 [CONVERTER](https://maciejlaciej.github.io/currency-converter/)
 
