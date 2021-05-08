@@ -8,18 +8,6 @@ let buttonCalculate = document.querySelector(".js-button");
 let buttonClear = document.querySelector(".js-buttonClear");
 let outcome = document.querySelector(".js-outcome");
 
-selectCurrencyIn.addEventListener("input", () => {
-    if (selectCurrencyIn.value === selectCurrencyOut.value) {
-        selectCurrencyOut = "Wybierz";
-    }
-});
-
-selectCurrencyOut.addEventListener("input", () => {
-    if (selectCurrencyOut.value === selectCurrencyIn.value) {
-        selectCurrencyIn = "Wybierz";
-    }
-});
-
 formElement.addEventListener("submit", (event) => {
     event.preventDefault();
 
