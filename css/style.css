@@ -12,3 +12,12 @@ html {
 *, ::after, ::before {
     box-sizing: inherit;
 }
+
+.container {
+ background-image: url("../images/currency-imgbackground.jpg"); 
+ background-repeat: no-repeat repeat;  
+ background-position: center;
+ background-size: contain;
+ margin: 0px 100px;
+ background-attachment: fixed;
+}

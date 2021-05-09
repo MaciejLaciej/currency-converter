@@ -19,50 +19,53 @@
 </head>
 
 <body>
-    <form class="form js-form">
-        <fieldset class="form__fieldset">
-            <legend class="form__legend">Wybierz walutę</legend>
-            <p>
-                <label>
-                    <span class="form__chooseCurrency ">Waluta nadana:</span> <select class="form__field js-currencyIn">
-                        <option value="NONE" selected> Wybierz </option>
-                        <option value="PLN"> PLN </option>
-                        <option value="EUR"> EUR </option>
-                        <option value="GBP"> GBP </option>
-                    </select>
-                </label>
-            </p>
-            <p>
-                <label>
-                    <span class="form__chooseCurrency">Waluta po przeliczeniu:</span><select
-                        class="form__field js-currencyOut">
-                        <option value="NONE" selected> Wybierz </option>
-                        <option value="PLN"> PLN </option>
-                        <option value="EUR"> EUR </option>
-                        <option value="GBP"> GBP </option>
-                    </select>
-                </label>
-            </p>
-        </fieldset>
-        <fieldset class="form__fieldset">
-            <legend class="form__legend">Wartość nadana:</legend>
-            <p>
-                <label>
-                    Wartość:
-                    <input type="number" name="amount" step=0.01 min=0  class="form__field js-userInput"
-                        placeholder="0,0" autofocus>
-                </label>
-            </p>
-        </fieldset>
-        <p><button class="form__button js-buttonCalculate">Przelicz</button></p>
-        <p><button class="form__button js-buttonClear" type="reset">Wyczyść</button></p>
-        <fieldset class="form__fieldset">
-            <legend class="form__legend">Wynik</legend>
-            <p>
-                <strong class="js-outcome"></strong>
-            </p>
-        </fieldset>
-    </form>
+    <div class="container">
+        <form class="form js-form">
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Wybierz walutę</legend>
+                <p>
+                    <label>
+                        <span class="form__chooseCurrency ">Waluta nadana:</span> <select
+                            class="form__field js-currencyIn">
+                            <option value="NONE" selected> Wybierz </option>
+                            <option value="PLN"> PLN </option>
+                            <option value="EUR"> EUR </option>
+                            <option value="GBP"> GBP </option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <span class="form__chooseCurrency">Waluta po przeliczeniu:</span><select
+                            class="form__field js-currencyOut">
+                            <option value="NONE" selected> Wybierz </option>
+                            <option value="PLN"> PLN </option>
+                            <option value="EUR"> EUR </option>
+                            <option value="GBP"> GBP </option>
+                        </select>
+                    </label>
+                </p>
+            </fieldset>
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Wartość nadana:</legend>
+                <p>
+                    <label>
+                        Wartość:
+                        <input type="number" name="amount" step=0.01 min=0 class="form__field js-userInput"
+                            placeholder="0,0" autofocus>
+                    </label>
+                </p>
+            </fieldset>
+            <p><button class="form__button js-buttonCalculate">Przelicz</button></p>
+            <p><button class="form__button js-buttonClear" type="reset">Wyczyść</button></p>
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Wynik</legend>
+                <p>
+                    <strong class="js-outcome"></strong>
+                </p>
+            </fieldset>
+        </form>
+    </div>
 </body>
 
 </html>
