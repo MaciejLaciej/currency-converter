@@ -3,10 +3,6 @@ console.log("cześć")
 const formElement = document.querySelector(".js-form");
 const selectCurrencyOut = document.querySelector(".js-currencyOut");
 const selectCurrencyIn = document.querySelector(".js-currencyIn");
-const userInput = document.querySelector(".js-userInput");
-const buttonCalculate = document.querySelector(".js-button");
-const buttonClear = document.querySelector(".js-buttonClear");
-const outcome = document.querySelector(".js-outcome");
 
 const rate = (initialCurrency, finalCurrency) => {
     const rateEUR = 4.5635;
@@ -36,20 +32,14 @@ const rate = (initialCurrency, finalCurrency) => {
 formElement.addEventListener("submit", (event) => {
     event.preventDefault();
 
+    const outcome = document.querySelector(".js-outcome");
+    const userInput = document.querySelector(".js-userInput");
     const amount = userInput.value;
     const initialCurrency = selectCurrencyIn.value;
     const finalCurrency = selectCurrencyOut.value;
     let result = +rate(initialCurrency, finalCurrency) * amount;
     
-    outcome.innerHTML = (initialCurrency === "NONE" || finalCurrency === "NONE") 
-    ? "Nie wybrano waluty"
-    : {
-        outcome.innerHTML = `${amount} ${initialCurrency} = ${result.toFixed(
-            2
-          )} ${finalCurrency}`;
-        }
-
-    if (initialCurrency === "NONE" || finalCurrency === "NONE") {
+       if (initialCurrency === "NONE" || finalCurrency === "NONE") {
         outcome.innerHTML = "Nie wybrano waluty";
     } else {
         outcome.innerHTML = `${amount} ${initialCurrency} = ${result.toFixed(
@@ -58,6 +48,7 @@ formElement.addEventListener("submit", (event) => {
         }
       });
 
+      
       buttonClear.addEventListener("click", () => {
-        outcome.innerHTML = "   ";
+        outcome.innerHTML = "Wybierz walutę";
       });
